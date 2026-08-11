@@ -1,0 +1,1 @@
+#include <timer.h>#include "tk.h"double tkNow(void){   UnsignedWide tk_time;      Microseconds(&tk_time);      return 4294.967296 * tk_time.hi + 0.000001 * tk_time.lo;}

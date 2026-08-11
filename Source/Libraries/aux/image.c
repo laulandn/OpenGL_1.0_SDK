@@ -1,0 +1,1 @@
+#include "tk.h"#include "aux.h"AUX_RGBImageRec *auxRGBImageLoad(char *fileName){	return (AUX_RGBImageRec *) tkRGBImageLoad(fileName);}
