@@ -15,6 +15,10 @@
 #include "glut_const.h"
 #include "glutint.h"
 
+
+#include <MacWindows.h>
+
+
 GLUTwindow *__glutCurrentWindow = NULL;
 GLUTwindow **__glutWindowList = NULL;
 int __glutWindowListSize = 0;
@@ -220,7 +224,7 @@ static AGLPixelFormat getVisualInfoRGB(unsigned int mode)
 	if(GLUT_WIND_HAS_DEPTH(mode))
 	{
 		list[n++] = AGL_DEPTH_SIZE;
-		list[n++] = 24;
+		list[n++] = 16/*24*/;
 	}
 	
 	if(GLUT_WIND_HAS_STENCIL(mode))

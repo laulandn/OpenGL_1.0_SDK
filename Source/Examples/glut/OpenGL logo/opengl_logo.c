@@ -203,18 +203,27 @@ void SetCamera(void)
 
 int main(int argc, char *argv[])
 {
+
+  freopen ("stdout.txt", "w", stdout);
+  freopen ("stderr.txt", "w", stderr);
 	glutInitDisplayMode(GLUT_DEPTH | GLUT_RGB | GLUT_DOUBLE | GLUT_MULTISAMPLE);
+  fprintf(stderr,"Going to glutInitWindowPosition...\n"); fflush(stderr);
 	glutInitWindowPosition(50, 50);
+  fprintf(stderr,"Going to glutInitWindowSize...\n"); fflush(stderr);
 	glutInitWindowSize(w_win, h_win);
+  fprintf(stderr,"Going to glutCreateWindow...\n"); fflush(stderr);
 	glutCreateWindow("Rotating OpenGL Logo");
+  fprintf(stderr,"Going to set funcs...\n"); fflush(stderr);
 	glutDisplayFunc(display);
 	glutKeyboardFunc(parsekey);
 	glutSpecialFunc(parsekey_special);
 	glutReshapeFunc(myReshape);
 	glutIdleFunc(Animate);
 	randomize();
+  fprintf(stderr,"Going to myinit...\n"); fflush(stderr);
 	myinit();
 	glutSwapBuffers();
+  fprintf(stderr,"Going to glutMainLoop...\n"); fflush(stderr);
 	glutMainLoop();
 	return 0;             /* ANSI C requires main to return int. */
 }

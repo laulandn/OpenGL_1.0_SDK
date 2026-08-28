@@ -1,0 +1,9 @@
+aglConfigure...not implemented
+aglChoosePixelFormat: attrib=AGL_RGBA
+aglChoosePixelFormat: attrib=AGL_DOUBLEBUFFER
+aglChoosePixelFormat no gdevs, providing one...
+glActiveTextureARB...not implemented
+glClientActiveTextureARB...not implemented
+glActiveTextureARB...not implemented
+glClientActiveTextureARB...not implemented
+glLockArraysEXT...not implemented

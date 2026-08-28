@@ -13,9 +13,9 @@ OBJS=$(subst .c,.o,$(wildcard *.c))
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 all: $(OBJS)
-#	$(CC) -o bluepony.code.bin $(OBJS) $(LDFLAGS)
-	$(CC) -o bluepony $(OBJS) $(LDFLAGS)
-	$(HOME)/sdl2macos9/xcoff2app.sh bluepony
+#	$(CC) -o glutmech.code.bin $(OBJS) $(LDFLAGS)
+	$(CC) -o glutmech $(OBJS) $(LDFLAGS)
+	$(HOME)/sdl2macos9/xcoff2app.sh glutmech
 
 clean:
-	rm -f *.o *.bin *.pef *.APPL *.dsk *.gdb bluepony
+	rm -f *.o *.bin *.pef *.APPL *.dsk *.gdb glutmech

@@ -21,4 +21,4 @@ all: $(OBJS)
 	$(HOME)/sdl2macos9/xcoff2app.sh backtrace
 
 clean:
-	rm -f *.o *.bin *.pef *.APPL *.dsk *.gdb atlantis
+	rm -f *.o *.bin *.pef *.APPL *.dsk *.gdb backtrace

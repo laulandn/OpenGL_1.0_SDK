@@ -13,8 +13,11 @@
 #include "glut.h"
 #include "glutint.h"
 
+
+#include <MacWindows.h>
 #include <Menus.h>
 #include <Events.h>
+
 
 typedef struct glut_menu_rec {
 	char      label[50];

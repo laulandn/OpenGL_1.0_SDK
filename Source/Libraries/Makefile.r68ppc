@@ -1,0 +1,23 @@
+
+all:
+	make -C aux -fMakefile.r68ppc
+	make -C glut -fMakefile.r68ppc
+	make -i -C glu -fMakefile.r68ppc
+	make -C mui -fMakefile.r68ppc
+	make -C tk -fMakefile.r68ppc
+
+lib:
+	make -C aux -fMakefile.r68ppc
+	make -C glut -fMakefile.r68ppc
+	make -i -C glu -fMakefile.r68ppc
+	make -C mui -fMakefile.r68ppc
+	make -C tk -fMakefile.r68ppc
+	cp */*.a .
+
+clean:
+	make -C aux -fMakefile.r68ppc clean
+	make -C glut -fMakefile.r68ppc clean
+	make -i -C glu -fMakefile.r68ppc clean
+	make -C mui -fMakefile.r68ppc clean
+	make -C tk -fMakefile.r68ppc clean
+	rm *.a
