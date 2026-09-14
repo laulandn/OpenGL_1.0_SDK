@@ -12,6 +12,10 @@ extern float lx,ly;
 extern int angle;
 int ch;
 
+
+extern void set_color(GLfloat *rgb, float shine);
+
+
 void do_vakje(char c)
 {
     switch(c)

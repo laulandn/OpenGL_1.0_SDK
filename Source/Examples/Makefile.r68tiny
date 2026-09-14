@@ -1,0 +1,16 @@
+
+all:
+	make -i -C aux -fMakefile.r68
+	make -i -C glut -fMakefile.r68
+	make -i -C Intros -fMakefile.r68
+	make -i -C Multi-Texture\ CVA -fMakefile.r68
+	make -i -C DrawSprocket -fMakefile.r68
+	make -i -C Renderer\ Info -fMakefile.r68
+	
+clean:
+	make -i -C aux -fMakefile.r68 clean
+	make -i -C glut -fMakefile.r68 clean
+	make -i -C Intros -fMakefile.r68 clean
+	make -i -C Multi-Texture\ CVA -fMakefile.r68 clean
+	make -i -C DrawSprocket -fMakefile.r68 clean
+	make -i -C Renderer\ Info -fMakefile.r68 clean

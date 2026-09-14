@@ -5,7 +5,7 @@ CXX=m68k-apple-macos-g++
 #CXX=powerpc-apple-macos-g++
 
 CFLAGS= -I$(HOME)/Mesa-2.4.1/Headers -I../../../../../Headers/MUI
-LDFLAGS= -lglut -lOpenGLUtility -lOpenGLLibrary -lDrawSprocketLib -lm
+LDFLAGS= -lglmui -lglut -lOpenGLUtility -lOpenGLLibrary -lDrawSprocketLib -lm $(HOME)/sdl2macos9/dummy_dir/*.o
 
 OBJS=$(subst .c,.o,$(wildcard *.c))
 

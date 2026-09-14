@@ -2,22 +2,19 @@
 all:
 	make -C aux -fMakefile.r68
 	make -C glut -fMakefile.r68
-	make -i -C glu -fMakefile.r68
-	make -C mui -fMakefile.r68
-	make -C tk -fMakefile.r68
-	
-lib:
-	make -C aux -fMakefile.r68
-	make -C glut -fMakefile.r68
-	make -i -C glu -fMakefile.r68
+	make -C glu -fMakefile.r68
 	make -C mui -fMakefile.r68
 	make -C tk -fMakefile.r68
 	cp */*.a .
 
+install:
+	make -f Makefile.r68
+	cp *.a $(HOME)/Retro68-build/toolchain/m68k-apple-macos/lib/.
+
 clean:
 	make -C aux -fMakefile.r68 clean
 	make -C glut -fMakefile.r68 clean
-	make -i -C glu -fMakefile.r68 clean
+	make -C glu -fMakefile.r68 clean
 	make -C mui -fMakefile.r68 clean
 	make -C tk -fMakefile.r68 clean
-	rm *.a
+	rm -f *.a

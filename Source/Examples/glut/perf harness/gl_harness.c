@@ -10,8 +10,8 @@
 #include <string.h>
 #include "glut.h"
 
-extern testInit(int argc, char **argv, int width, int height);
-extern testRender(void);
+extern void testInit(int argc, char **argv, int width, int height);
+extern void testRender(void);
 
 int testIterationsStep, testDisplayMode, testMinimumTestTime;
 float timeEnd, timeStart;

@@ -1,0 +1,24 @@
+
+CC=m68k-apple-macos-gcc
+CXX=m68k-apple-macos-g++
+#CC=powerpc-apple-macos-gcc
+#CXX=powerpc-apple-macos-g++
+
+CFLAGS= -I$(HOME)/Mesa-2.4.1/Headers -I../../../../../Headers/mui
+CFLAGS += -I$(HOME)/sdl2macos9/dummy_dir/.
+
+LDFLAGS= -lglmui -lglut -lOpenGLUtility -lOpenGLLibrary -lDrawSprocketLib -lm $(HOME)/sdl2macos9/dummy_dir/*.o
+
+OBJS=$(subst .c,.o,$(wildcard *.c))
+
+.c.o:
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+all: $(OBJS)
+	$(CXX) -o browser.code.bin $(OBJS) $(LDFLAGS)
+	../../bin2app.sh browser
+#	$(CC) -o calc $(OBJS) $(LDFLAGS)
+#	$(HOME)/sdl2macos9/xcoff2app.sh browser
+
+clean:
+	rm -f *.o *.bin *.pef *.APPL *.dsk *.gdb browser

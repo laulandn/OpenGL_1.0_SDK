@@ -1,0 +1,8 @@
+
+all:
+	make -C Libraries -fMakefile.r68tiny
+	make -C Examples -fMakefile.r68tiny
+	
+clean:
+	make -C Libraries -fMakefile.r68tiny clean
+	make -C Examples -fMakefile.r68tiny clean

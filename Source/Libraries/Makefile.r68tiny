@@ -1,0 +1,16 @@
+
+all:
+	make -C aux -fMakefile.r68tiny
+	make -C glut -fMakefile.r68tiny
+#	make -i -C glu -fMakefile.r68tiny
+	make -C mui -fMakefile.r68tiny
+	make -C tk -fMakefile.r68tiny
+	cp */*.a .
+
+clean:
+	make -C aux -fMakefile.r68tiny clean
+	make -C glut -fMakefile.r68tiny clean
+	make -i -C glu -fMakefile.r68tiny clean
+	make -C mui -fMakefile.r68tiny clean
+	make -C tk -fMakefile.r68tiny clean
+	rm *.a

@@ -19,6 +19,14 @@ int angle = 0, ang2 = 0;
 float lx=30.0, ly=20.0, lz = 0.0, fov = 0.2;
 GLboolean fog = GL_TRUE;
 
+
+extern void do_display();
+extern void init_sin();
+extern void init_lists();
+extern void init_map();
+extern void make_texture();
+
+
 void display(void)
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
