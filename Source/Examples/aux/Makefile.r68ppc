@@ -1,13 +1,13 @@
 
 all:
-	make -i -C atlantis -fMakefile.r68ppc
-	make -i -C backtrace -fMakefile.r68ppc
-	make -i -C book -fMakefile.r68ppc
-	make -i -C samples -fMakefile.r68ppc
+#	make -C atlantis -f Makefile.r68ppc
+#	make -i -C backtrace -f Makefile.r68ppc
+#	make -i -C book -f Makefile.r68ppc
+#	make -i -C samples -f Makefile.r68ppc
 	
 clean:
-	make -i -C atlantis  -fMakefile.r68ppc clean
-	make -i -C backtrace  -fMakefile.r68ppc clean
-	make -i -C book  -fMakefile.r68ppc clean
-	make -i -C samples  -fMakefile.r68ppc clean
+	make -C atlantis  -f Makefile.r68ppc clean
+	make -C backtrace  -f Makefile.r68ppc clean
+	make -C book  -f Makefile.r68ppc clean
+	make -C samples  -f Makefile.r68ppc clean
 	rm -rf */*.o

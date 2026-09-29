@@ -15,7 +15,7 @@ OBJS=$(subst .c,.o,$(wildcard *.c))
 all: $(OBJS)
 #	$(CC) -o opengl_logo.code.bin $(OBJS) $(LDFLAGS)
 	$(CC) -o opengl_logo $(OBJS) $(LDFLAGS)
-	$(HOME)/sdl2macos9/xcoff2app.sh opengl_logo
+	../xcoff2app.sh opengl_logo
 
 clean:
 	rm -f *.o *.bin *.pef *.APPL *.dsk *.gdb opengl_logo

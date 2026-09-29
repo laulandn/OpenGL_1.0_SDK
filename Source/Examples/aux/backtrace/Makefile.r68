@@ -5,7 +5,7 @@ CXX=m68k-apple-macos-g++
 #CXX=powerpc-apple-macos-g++
 
 CFLAGS= -I../../../../Headers
-LDFLAGS=-lOpenGLUtility -lOpenGLLibrary -lglaux -lgltk  -lDrawSprocketLib -lContextualMenu -lm
+LDFLAGS=-lOpenGLUtility -lOpenGLLibrary -lglaux -lgltk  -lDrawSprocketLib -lm
 
 OBJS=$(subst .c,.o,$(wildcard *.c)) $(subst .cpp,.o,$(wildcard *.cpp))
 
@@ -17,7 +17,7 @@ OBJS=$(subst .c,.o,$(wildcard *.c)) $(subst .cpp,.o,$(wildcard *.cpp))
 
 all: $(OBJS)
 	$(CC) -o backtrace.code.bin $(OBJS) $(LDFLAGS)
-	$(HOME)/sdl2macos9/bin2app.sh backtrace
+	../bin2app.sh backtrace
 #	$(CC) -o backtrace $(OBJS) $(LDFLAGS)
 #	$(HOME)/sdl2macos9/xcoff2app.sh backtrace
 

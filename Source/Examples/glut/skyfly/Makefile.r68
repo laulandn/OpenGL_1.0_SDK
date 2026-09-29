@@ -16,7 +16,7 @@ all: $(OBJS)
 	$(CXX) -o skyfly.code.bin $(OBJS) $(LDFLAGS)
 	../bin2app.sh skyfly
 #	$(CC) -o skyfly $(OBJS) $(LDFLAGS)
-#	$(HOME)/sdl2macos9/xcoff2app.sh skyfly
+#	../xcoff2app.sh skyfly
 
 clean:
 	rm -f *.o *.bin *.pef *.APPL *.dsk *.gdb skyfly

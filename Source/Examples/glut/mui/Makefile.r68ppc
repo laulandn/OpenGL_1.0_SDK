@@ -1,7 +1,9 @@
 
 all:
 	make -f Makefile.r68ppc -i -C calc
+	make -f Makefile.r68ppc -i -C browser
 	
 clean:
-	make -f Makefile.r68ppc -i -C calc clean
+	make -f Makefile.r68ppc -C calc clean
+	make -f Makefile.r68ppc -C browser clean
 	rm -rf */*.o

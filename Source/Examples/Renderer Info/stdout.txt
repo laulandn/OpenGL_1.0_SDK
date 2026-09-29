@@ -1,3 +1,0 @@
-
-Device : 0
-aglQueryRendererInfo : Info Error

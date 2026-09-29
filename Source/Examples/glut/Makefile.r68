@@ -1,38 +1,39 @@
 
 all:
-	make -i -C atlantis -f Makefile.r68
-	make -i -C bluepony -f Makefile.r68
-	make -i -C chess -f Makefile.r68
-	make -i -C geoface -f Makefile.r68
-	make -i -C glflare -f Makefile.r68
-	make -i -C gliq -f Makefile.r68
-	make -i -C glutmech -f Makefile.r68
-	make -i -C ideas -f Makefile.r68
-	make -i -C OpenGL\ logo -f Makefile.r68
-	make -i -C perf\ harness -f Makefile.r68
-	make -i -C raceGL -f Makefile.r68
-	make -i -C roller\ coaster -f Makefile.r68
-	make -i -C skyfly -f Makefile.r68
-	make -i -C underwater -f Makefile.r68
-	make -i -C walker -f Makefile.r68
-	make -i -C yacme -f Makefile.r68
-	make -i -C mui -f Makefile.r68
+	make -C atlantis -f Makefile.r68
+	make -C bluepony -f Makefile.r68
+	make -C chess -f Makefile.r68
+	make -C geoface -f Makefile.r68
+	make -C glflare -f Makefile.r68
+	make -C gliq -f Makefile.r68
+	make -C glutmech -f Makefile.r68
+	make -C ideas -f Makefile.r68
+	make -C OpenGL\ logo -f Makefile.r68
+	make -C perf\ harness -f Makefile.r68
+	make -C raceGL -f Makefile.r68
+	make -C roller\ coaster -f Makefile.r68
+	make -C skyfly -f Makefile.r68
+	make -C underwater -f Makefile.r68
+	make -C walker -f Makefile.r68
+	make -C yacme -f Makefile.r68
+	make -C mui -f Makefile.r68
 	
 clean:
-	make -i -C atlantis -f Makefile.r68 clean
-	make -i -C bluepony -f Makefile.r68 clean
-	make -i -C chess -f Makefile.r68 clean
-	make -i -C geoface -f Makefile.r68 clean
-	make -i -C glflare -f Makefile.r68 clean
-	make -i -C gliq -f Makefile.r68 clean
-	make -i -C glutmech -f Makefile.r68 clean
-	make -i -C ideas -f Makefile.r68 clean
-	make -i -C OpenGL\ logo -f Makefile.r68 clean
-	make -i -C perf\ harness -f Makefile.r68 clean
-	make -i -C raceGL -f Makefile.r68 clean
-	make -i -C roller\ coaster -f Makefile.r68 clean
-	make -i -C skyfly -f Makefile.r68 clean
-	make -i -C underwater -f Makefile.r68 clean
-	make -i -C walker -f Makefile.r68 clean
-	make -i -C mui -f Makefile.r68 clean
+	make -C atlantis -f Makefile.r68 clean
+	make -C bluepony -f Makefile.r68 clean
+	make -C chess -f Makefile.r68 clean
+	make -C geoface -f Makefile.r68 clean
+	make -C glflare -f Makefile.r68 clean
+	make -C gliq -f Makefile.r68 clean
+	make -C glutmech -f Makefile.r68 clean
+	make -C ideas -f Makefile.r68 clean
+	make -C OpenGL\ logo -f Makefile.r68 clean
+	make -C perf\ harness -f Makefile.r68 clean
+	make -C raceGL -f Makefile.r68 clean
+	make -C roller\ coaster -f Makefile.r68 clean
+	make -C skyfly -f Makefile.r68 clean
+	make -C underwater -f Makefile.r68 clean
+	make -C walker -f Makefile.r68 clean
+	make -C yacme -f Makefile.r68 clean
+	make -C mui -f Makefile.r68 clean
 	rm -rf */*.o

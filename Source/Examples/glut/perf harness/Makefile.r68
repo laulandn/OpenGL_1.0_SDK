@@ -16,7 +16,7 @@ all: $(OBJS)
 	$(CXX) -o perf_harness.code.bin $(OBJS) $(LDFLAGS)
 	../bin2app.sh perf_harness
 #	$(CC) -o perf_harness $(OBJS) $(LDFLAGS)
-#	$(HOME)/sdl2macos9/xcoff2app.sh perf_harness
+#	../xcoff2app.sh perf_harness
 
 clean:
 	rm -f *.o *.bin *.pef *.APPL *.dsk *.gdb perf_harness

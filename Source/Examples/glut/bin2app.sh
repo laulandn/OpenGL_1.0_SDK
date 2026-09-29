@@ -1,7 +1,7 @@
 # bin2app.sh: Takes a CODE resource and creates an m68k application.
 
 PATH_TO_RETRO68=$HOME/Retro68-build/toolchain/m68k-apple-macos
-PATH_TO_SDL2=$HOME/sdl2macos9
+PATH_TO_SDL2=../../../../../sdl2macos9
 RINC=$PATH_TO_RETRO68/RIncludes
 RES="$PATH_TO_SDL2/Retro68APPL.r $PATH_TO_SDL2/SDL.r"
 

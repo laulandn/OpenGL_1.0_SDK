@@ -1,16 +1,16 @@
 
 all:
-	make -i -C aux -fMakefile.r68ppc
-	make -i -C glut -fMakefile.r68ppc
-	make -i -C Intros -fMakefile.r68ppc
-	make -i -C Multi-Texture\ CVA -fMakefile.r68ppc
-	make -i -C DrawSprocket -fMakefile.r68ppc
-	make -i -C Renderer\ Info -fMakefile.r68ppc
+	make -i -C aux -f Makefile.r68ppc
+	make -i -C glut -f Makefile.r68ppc
+	make -i -C Intros -f Makefile.r68ppc
+	make -i -C Multi-Texture\ CVA -f Makefile.r68ppc
+	make -i -C DrawSprocket -f Makefile.r68ppc
+	make -i -C Renderer\ Info -f Makefile.r68ppc
 	
 clean:
-	make -i -C aux -fMakefile.r68ppc clean
-	make -i -C glut -fMakefile.r68ppc clean
-	make -i -C Intros -fMakefile.r68ppc clean
-	make -i -C Multi-Texture\ CVA -fMakefile.r68ppc clean
-	make -i -C DrawSprocket -fMakefile.r68ppc clean
-	make -i -C Renderer\ Info -fMakefile.r68ppc clean
+	make -i -C aux -f Makefile.r68ppc clean
+	make -i -C glut -f Makefile.r68ppc clean
+	make -i -C Intros -f Makefile.r68ppc clean
+	make -i -C Multi-Texture\ CVA -f Makefile.r68ppc clean
+	make -i -C DrawSprocket -f Makefile.r68ppc clean
+	make -i -C Renderer\ Info -f Makefile.r68ppc clean

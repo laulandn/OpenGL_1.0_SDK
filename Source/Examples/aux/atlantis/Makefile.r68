@@ -14,7 +14,7 @@ OBJS=$(subst .c,.o,$(wildcard *.c))
 
 all: $(OBJS)
 	$(CC) -o atlantis.code.bin $(OBJS) $(LDFLAGS)
-	$(HOME)/sdl2macos9/bin2app.sh atlantis
+	../bin2app.sh atlantis
 #	$(CC) -o atlantis $(OBJS) $(LDFLAGS)
 #	$(HOME)/sdl2macos9/xcoff2app.sh atlantis
 
